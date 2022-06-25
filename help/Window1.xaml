@@ -1,0 +1,22 @@
+﻿<Window x:Class="help.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:help"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <StackPanel>
+        <TextBlock Text="Кличка" FontSize="18"/>
+        <TextBox x:Name="NameTextBox" FontSize="18"/>
+
+        <TextBlock Text="Порода" FontSize="18"/>
+        <TextBox x:Name="PorodaTextBox"  FontSize="18"/>
+
+        <TextBlock Text="Дата Рождения" FontSize="18"/>
+        <Calendar x:Name="BirthdayCalendar"/>
+
+        <Button Content="Сохранить" Click="Button_Click"/>
+
+    </StackPanel>
+</Window>
